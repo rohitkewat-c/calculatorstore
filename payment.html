@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Secure Payment - CalcStore</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="payment-body">
+
+<div class="checkout-container">
+
+  <div class="checkout-box">
+    <h2>🛒 Secure Checkout</h2>
+
+    <div class="order-summary">
+      <p><strong>Product:</strong> <span id="productName">Premium Calculator</span></p>
+      <p><strong>Total Amount:</strong> ₹<span id="totalAmount">999</span></p>
+    </div>
+
+    <input type="text" placeholder="Full Name">
+    <input type="text" placeholder="Address">
+    <input type="text" placeholder="City">
+    <input type="text" placeholder="Pincode">
+
+    <button class="pay-btn" onclick="payNow()">Pay Now</button>
+  </div>
+
+</div>
+
+<script>
+function payNow(){
+  alert("Payment Successful 🎉");
+  window.location.href="summary.html";
+}
+</script>
+
+</body>
+</html>
